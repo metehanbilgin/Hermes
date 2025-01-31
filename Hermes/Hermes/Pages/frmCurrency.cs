@@ -44,7 +44,7 @@ namespace Hermes.Pages
 
             client.Timeout = -1;
             var request = new RestRequest(Method.GET);
-            request.AddHeader("apikey", "cur_live_NGdc1WSmjTTjGNsHhQn9zHjURK5nFxaQrcJO44Q5");
+            request.AddHeader("", "");  //Write your API key here
             IRestResponse response = client.Execute(request);
             Console.WriteLine(response.Content);
             return response.Content;
